@@ -9,58 +9,11 @@ body {
   background-color: hsl(240 10% 3.9%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-ul.reset,
-ul.reset li,
-ul.reset ul li {
-   margin:0;
-   padding: 0;
-   text-indent: 0;
-   list-style-type: none;
-}
-
-.chat-gates {
-  display: grid;
-  height: 100vh;
-}
-
-.chat-gates__form {
-  place-self: center;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
-  background-color: orange;
-  color: white;
-}
-
-.chat-container {
-  overflow-x: hidden;
-  display: grid;
-  grid-template-columns: 290px 1fr;
-  grid-template-rows: auto 1fr;
-  grid-column-gap: 1rem;
-  height: 600px;
-  margin: 5rem auto;
-  width: 1024px;
-}
-
-.reminder {
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-
-.reminder__title {
-  margin-top: 0;
+ul {
+  list-style-type: none !important;
+  margin: 0px !important;
+  margin-block: 0px !important;
+  padding: 0px !important;
 }
 
 .messages {
@@ -115,39 +68,8 @@ ul.reset ul li {
   margin-right: 1rem;
 }
 
-.input {
-  border-radius: 4px;
-  border: 1px solid white;
-  padding: 1rem 1.5rem;
-  margin: 1rem;
-  font-size: 20px;
-  flex: 1;
-}
-
-.button {
-  border-radius: 4px;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: orange;
-  color: white;
-  border: none;
-  padding: 1rem;
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.chat-gates__form__button {
-  margin: 0 0 0 1rem;
-}
-
-.send {
-  display: flex;
-}
-
-.send__input {
-  margin-left: 0;
-}
-
-.send__button {
-  margin-right: 0;
+@media (max-width: 576px) {
+  .react-emoji-picker--wrapper {
+    left: 0;
+  }
 }

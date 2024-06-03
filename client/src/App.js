@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import "./App.css";
 import ChatGates from "./components/ChatGates";
 import Chat from "./components/Chat";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
-function App() {
+const App = () => {
   const [userName, setUserName] = useState("");
 
   return (
-    <div className="container">
+    <div className="main-wrapper">
       {userName ? (
         <Chat userName={userName} />
       ) : (
@@ -15,6 +16,6 @@ function App() {
       )}
     </div>
   );
-}
+};
 
 export default App;
